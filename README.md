@@ -13,11 +13,11 @@ Les outils mes en oeuvre :
 2. Les objets créés sont manipulés en mémoire à l’aide de collections.
 3. Les données sont stockées dans la base de données gesper.
 4. On utilisera une bibliothèque de classes libGesper.
-5. On utilisera une application console """""""""""""""""
+5. On utilisera une application console testLibGesper
 6. Chaque table de la base de données Gesper donne lieu à la création d’une classe.
 7. Chaque occurrence de table de la base de données Gesper est instanciée sous forme d’objet et stockée dans une collection.   
 
-
+### Diagramme de Classe ###
 ![DiagrammeClasse.png](http://image.noelshack.com/fichiers/2019/13/6/1553959685-sans-titre.png)
 
 ## bibliothèque de classes ##
