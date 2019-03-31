@@ -28,6 +28,7 @@ Elle comprendra les méthodes  charger  et sauvegarder  pour manipuler la base d
 ![3Classe.png](http://image.noelshack.com/fichiers/2019/13/7/1554026232-capture12.png)
 
 Exemple de code pour Charger les Employes:
+```cs
  public void chargerEmployes()
         {
             MySqlCommand cmSql = new MySqlCommand();
@@ -52,6 +53,7 @@ Exemple de code pour Charger les Employes:
             }
             this.cnx.Close();
         }
+```
 ## Utilisation de la bibliothèque ##
 Pour Tester la Bibliothèque LibGesper nous utilisons la référence dans une application console:
 
