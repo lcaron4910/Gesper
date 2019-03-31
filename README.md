@@ -23,7 +23,8 @@ Les outils mes en oeuvre :
 ## bibliothèque de classes ##
 
 La classe Données comprend 3 listes (pour les services, employés, diplômes).
-Elle comprendra les méthodes  charger  et sauvegarder  pour manipuler la base de données
+Elle comprendra les méthodes  charger  et sauvegarder  pour manipuler la base de données.
+
 ![3Classe.png](http://image.noelshack.com/fichiers/2019/13/7/1554026232-capture12.png)
 
 ## Utilisation de la bibliothèque ##
