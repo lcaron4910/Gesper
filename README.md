@@ -27,7 +27,32 @@ Elle comprendra les méthodes  charger  et sauvegarder  pour manipuler la base d
 
 ![3Classe.png](http://image.noelshack.com/fichiers/2019/13/7/1554026232-capture12.png)
 
+Exemple de code pour Charger les Employes:
+ public void chargerEmployes()
+        {
+            MySqlCommand cmSql = new MySqlCommand();
+            cmSql.Connection = cnx;
+            cmSql.CommandText = "select * from employe";
+            cmSql.CommandType = CommandType.Text;
+            this.cnx.Open();
+            MySqlDataReader reader = cmSql.ExecuteReader();
+            while (reader.Read())
+            {
+                Service ser1=null ;
+                int i;
+                for ( i = 0; i < LesServices.Count; i++)
+                {
+                    if (LesServices[i].Id == Convert.ToInt32(reader[6]))
+                    {
+                        ser1 = LesServices[i];
+                    }
+                }
+                Employe emp = new Employe(Convert.ToInt32(reader[0]), Convert.ToString(reader[1]), Convert.ToString(reader[2]), Convert.ToString(reader[3]), Convert.ToByte(reader[4]), Convert.ToDecimal(reader[5]), ser1);
+                LesEmployes.Add(emp);
+            }
+            this.cnx.Close();
+        }
 ## Utilisation de la bibliothèque ##
+Pour Tester la Bibliothèque LibGesper nous utilisons la référence dans une application console:
 
-
-
+![Reference.png](http://image.noelshack.com/fichiers/2019/13/7/1554027127-capture684864.png)
