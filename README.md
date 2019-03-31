@@ -2,7 +2,7 @@
 
 Présentation du projet: le but est de réaliser une bibliothèque de classes et une application qui utilise la bibliotheque créée pour gérer le personnel.
 
-Les outils mes en oeuvre :
+Les outils mis en oeuvre :
 
 * git.
 * Visual studio.
